@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "aos": {
+    "host": "aos.cj7rnifaoqhx.us-east-2.rds.amazonaws.com",
+    "port": 3306,
+    "database": "aos",
+    "password": "AOS_1895",
+    "name": "aos",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

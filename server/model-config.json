@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "ActionClassificationType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "Campaign": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "CampaignClassificationType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "Company": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "CompanyAddressType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "CompanyClassificationType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "CompanyUrl": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "CompanyUrlType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "Contact": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "ContactAddressType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "ContactClassificationType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "ContactTitleType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "ContactUrlType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "OrderStateType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "ScopeType": {
+    "dataSource": "aos",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "aos",
+    "public": true
+  }
+}
