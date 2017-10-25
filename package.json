@@ -19,11 +19,17 @@
     "loopback-component-explorer": "^5.0.0",
     "loopback-connector-mysql": "^5.2.0",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "strong-error-handler": "^2.0.0",
+    "ejs": "latest",
+    "aws-sdk": "latest",
+    "express": "latest",
+    "body-parser": "latest",
+    "mysql": "latest"   
   },
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "npm-deploy": "^0.1.9",
     "nsp": "^2.1.0"
   },
   "repository": {

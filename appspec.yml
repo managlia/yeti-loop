@@ -2,32 +2,15 @@
 version: 0.0
 os: linux
 files:
-- source: /
- destination: /home/yeti-loop/yeti-loop
-
-permissions:
-- object: /
-   pattern: "**"
-   owner: yeti-loop
-   group: yeti-loop
-
+-files:
+  - source: /
+    destination: /var/api/
 hooks:
-ApplicationStop:
-   - location: bin/app-stop
-     timeout: 10
-     runas: yeti-loop
-
-AfterInstall:
-   - location: bin/install-pkgs
-     timeout: 1200
-     runas: yeti-loop
-
-ApplicationStart:
-   - location: bin/app-start
-     timeout: 60
-     runas: yeti-loop
-
-ValidateService:
-   - location: bin/app-validate
-     timeout: 10
-     runas: yeti-loop
+  AfterInstall:
+    - location: scripts/npm-install.sh
+      runas: root
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/npm-start.sh
+      runas: root
+      timeout: 60
